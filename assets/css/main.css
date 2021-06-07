@@ -181,7 +181,7 @@ input, select, textarea {
 	h3 {
 		font-size: 1.5em;
 		letter-spacing: -0.015em;
-		text-align: left;
+		/* text-align: left; */
 	}
 
 	em, i {
@@ -1985,6 +1985,45 @@ input, select, textarea {
 				font-size: 2em;
 			}
 			
+/* Collapsible */
+
+/* Style the button that is used to open and close the collapsible content */
+	.collapsible {
+		cursor: pointer;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+	.active, .collapsible:hover {
+	}
+
+	.collapsible:after {
+			content: '\02795'; /* Unicode character for "plus" sign (+) */
+			font-size: 30px;
+			float: right;
+			margin-left: 5px;
+	}
+
+	.active:after {
+		content: "\2796"; /* Unicode character for "minus" sign (-) */
+	}
+
+	/* Style the collapsible content. Note: hidden by default */
+	.content {
+		padding-top: 10px;
+		line-height: 1.5em;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+	}
+
+/* Text wrapper */
+	
+	.textwrap{
+		float: right;
+		width:50%;
+		margin: 10px;
+	}
+
 /* Wrappers */
 
 	.wrapper {
@@ -2107,7 +2146,7 @@ input, select, textarea {
 
 	#home {
 		padding: 10em 0 10em 0;
-		text-align: center;
+		text-alig center;
 	}
 
 		#home .image {

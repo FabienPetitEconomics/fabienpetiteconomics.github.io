@@ -1998,14 +1998,15 @@ input, select, textarea {
 	}
 
 	.collapsible:after {
-			content: '\02795'; /* Unicode character for "plus" sign (+) */
+			content: '\25BC'; /* Unicode character for "plus" sign (+) */
 			font-size: 30px;
 			float: right;
 			margin-left: 5px;
+			color: #3e3e3e;
 	}
 
 	.active:after {
-		content: "\2796"; /* Unicode character for "minus" sign (-) */
+		content: "\25B2"; /* Unicode character for "minus" sign (-) */
 	}
 
 	/* Style the collapsible content. Note: hidden by default */

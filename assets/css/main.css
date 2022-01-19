@@ -221,7 +221,7 @@ input, select, textarea {
 		footer > p {
 			font-size: 1.25em;
 		}
-
+		
 /* Container */
 
 	.container {
@@ -2147,8 +2147,8 @@ input, select, textarea {
 	}
 
 	#home {
-		padding: 10em 0 10em 0;
-		text-alig center;
+		padding: 5em 0 10em 0;
+		text-align: center;
 	}
 
 		#home .image {
@@ -2175,6 +2175,37 @@ input, select, textarea {
 			#home p a {
 				color: inherit;
 			}
+		#home ul {
+			text-align: left;
+			font-size: 1em;
+			padding-left: 5%;
+		}
+		
+		#home .forth {
+			text-align: left;
+			line-height: 0em;
+		}
+		
+		#home li.presentation {
+			list-style-type: "🗨️"; 
+		}
+		
+		#home li.thesis {
+			list-style-type: "🎓"; 
+		}
+		
+		#home li.draft {
+			list-style-type: "📝"; 
+		}
+		
+		#home li.paper {
+			list-style-type: "📰️"; 
+		}
+		
+		#home li.data {
+			list-style-type: "📊️"; 
+		}
+		
 
 	#contact footer {
 		font-size: 0.9em;

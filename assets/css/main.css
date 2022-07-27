@@ -2020,10 +2020,16 @@ input, select, textarea {
 
 /* Text wrapper */
 	
-	.textwrap{
+	.textwrap-50{
 		float: right;
-		width: 55%;
-		margin: 10px;
+		width: 50%;
+		margin: 20px;
+	}
+	
+	.textwrap-40{
+		float: right;
+		width: 40%;
+		margin: 20px;
 	}
 
 /* Wrappers */

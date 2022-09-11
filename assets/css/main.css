@@ -2221,6 +2221,10 @@ input, select, textarea {
 	#contact footer {
 		font-size: 0.9em;
 	}
+	
+	#contact h3 {
+		text-align: center;
+	}
 
 /* Copyright */
 

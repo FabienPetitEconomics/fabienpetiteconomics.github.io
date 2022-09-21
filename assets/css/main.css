@@ -2208,6 +2208,7 @@ input, select, textarea {
 		#home li.draft {
 			list-style-type: "📝"; 
 		}
+
 		
 		#home li.paper {
 			list-style-type: "📰️"; 
@@ -2215,6 +2216,10 @@ input, select, textarea {
 		
 		#home li.data {
 			list-style-type: "📊️"; 
+		}
+		
+		#home li.email {
+			list-style-type: "📧"; 
 		}
 		
 

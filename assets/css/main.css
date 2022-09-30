@@ -181,11 +181,10 @@ input, select, textarea {
 	h3 {
 		font-size: 1.5em;
 		letter-spacing: -0.015em;
-		text-align: left;
 	}
 	
 	h4 {
-		text-align: left;
+	
 	}
 
 	em, i {
@@ -294,6 +293,7 @@ input, select, textarea {
 		flex-wrap: wrap;
 		box-sizing: border-box;
 		align-items: flex-start;
+		margin-bottom: 2em;
 	}
 
 		.row > * {
@@ -1919,20 +1919,29 @@ input, select, textarea {
 	.box {
 		background: #fff;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-		text-align: justify;
 		padding: 2em;
 	}
 
 		.box.style1 {
 			padding: 2em 2em 2em 2em;
+			margin-bottom: 0.5em;
 		}
 
 			.box.style1 h3 {
 				margin-bottom: 0.5em;
 			}
+		
+		.box.style1 .content {
+			text-align: justify;
+		}
+		
+		.box.style2 .content {
+			text-align: justify;
+		}
 
 		.box.style2 h3 {
 			margin-bottom: 0.25em;
+			
 		}
 
 		.box.style2 .image {
@@ -2209,7 +2218,6 @@ input, select, textarea {
 			list-style-type: "📝"; 
 		}
 
-		
 		#home li.paper {
 			list-style-type: "📰️"; 
 		}

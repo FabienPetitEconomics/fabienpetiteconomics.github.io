@@ -2230,6 +2230,9 @@ input, select, textarea {
 			list-style-type: "📧"; 
 		}
 		
+		#home li.call {
+			list-style-type: "📢"; 
+		}
 
 	#contact footer {
 		font-size: 0.9em;

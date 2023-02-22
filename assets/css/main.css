@@ -2171,7 +2171,7 @@ input, select, textarea {
 	}
 
 		#home .image {
-			border-radius: 100%;
+			border-radius: 5%;
 			width: 20em;
 			height: 20em;
 			margin: 0;
@@ -2179,7 +2179,7 @@ input, select, textarea {
 		}
 
 			#home .image img {
-				border-radius: 100%;
+				border-radius: 5%;
 			}
 
 		#home h1 {

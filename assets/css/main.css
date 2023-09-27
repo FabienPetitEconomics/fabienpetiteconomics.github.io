@@ -2237,6 +2237,10 @@ input, select, textarea {
 		#home li.call {
 			list-style-type: "📢"; 
 		}
+		
+		#home li.video {
+			list-style-type: "📽️"; 
+		}
 
 	#contact footer {
 		font-size: 0.9em;

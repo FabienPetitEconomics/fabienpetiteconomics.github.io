@@ -2241,7 +2241,15 @@ input, select, textarea {
 		#home li.video {
 			list-style-type: "📽️"; 
 		}
+		
+		#home li.prize {
+			list-style-type: "🏆️"; 
+		}
 
+		#home li.soon {
+			list-style-type: "🔜️"; 
+		}
+		
 	#contact footer {
 		font-size: 0.9em;
 	}

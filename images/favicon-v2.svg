@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="FP monogram">
+  <rect width="512" height="512" rx="88" ry="88" fill="#242525"/>
+  <g fill="#c78f63">
+    <rect x="74" y="108" width="54" height="296"/>
+    <rect x="74" y="108" width="190" height="46"/>
+    <rect x="74" y="236" width="168" height="46"/>
+    <rect x="268" y="108" width="54" height="296"/>
+    <path d="M322 108h74c61 0 110 49 110 110s-49 110-110 110h-74v-44h74c36 0 66-29 66-66s-30-66-66-66h-74z"/>
+  </g>
+</svg>

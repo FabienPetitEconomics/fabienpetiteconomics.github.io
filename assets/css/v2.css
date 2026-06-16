@@ -223,8 +223,87 @@ h4 {
   color: #1877d8;
 }
 
+.icon-orcid {
+  color: #a6ce39;
+}
+
 .content {
   min-width: 0;
+}
+
+.pathways {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.pathway {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  color: var(--text);
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.pathway:hover,
+.pathway:focus-visible {
+  text-decoration: none;
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.pathway-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 1.1rem;
+  transition: background-color 0.2s ease;
+}
+
+.pathway:hover .pathway-icon,
+.pathway:focus-visible .pathway-icon {
+  background: var(--bg-card);
+}
+
+.pathway-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.pathway-text {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.pathway-cta {
+  margin-top: auto;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.pathway-cta i {
+  margin-left: 4px;
+  transition: transform 0.2s ease;
+}
+
+.pathway:hover .pathway-cta i,
+.pathway:focus-visible .pathway-cta i {
+  transform: translateX(4px);
 }
 
 .panel {
@@ -312,6 +391,13 @@ h3 {
   padding: 5px 10px;
   font-size: 0.9rem;
   color: var(--text);
+  transition: background-color 0.2s ease;
+}
+
+.section-nav a:hover,
+.section-nav a:focus-visible {
+  background: var(--accent-soft);
+  text-decoration: none;
 }
 
 .research-group {
@@ -369,7 +455,8 @@ h3 {
 .toggle:focus-visible,
 .btn:focus-visible,
 .primary-nav a:focus-visible,
-.section-nav a:focus-visible {
+.section-nav a:focus-visible,
+.pathway:focus-visible {
   outline: 2px solid #8e592d;
   outline-offset: 2px;
 }

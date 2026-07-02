@@ -503,15 +503,20 @@ h3 {
   }
 
   .nav-inner {
-    min-height: 56px;
+    min-height: 0;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    gap: 8px;
     padding: 10px 0;
   }
 
+  .brand {
+    font-size: 1.15rem;
+  }
+
   .primary-nav {
-    gap: 12px;
+    justify-content: center;
+    gap: 14px;
     font-size: 0.94rem;
   }
 

@@ -1,0 +1,109 @@
+%!TEX encoding = UTF-8 Unicode
+% LaTeX Template for CV/Resume
+%
+% This template has been downloaded and modified from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Original Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Modified (March 2019) by:
+% Jessica A. Rick <jrick@uwyo.edu>
+% http://www.jessicarick.com
+%
+% Modified (September 2021) by:
+% Fabien Petit <fabien.petit@univ-amu.fr>
+% https://www.fabienpetit.com
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, letterpaper]{academic-cv}
+
+\usepackage{hyperref}
+
+% Configure page margins with geometry
+\geometry{left=0.75in, top=0.75in, right=0.75in, bottom=0.75in, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+\name{Fabien PETIT}{}
+\position{Research Fellow{\enskip\cdotp\enskip}University College London{\enskip\cdotp\enskip}Centre for Education Policy and Equalising Opportunities}
+\address{IOE, UCL’s Faculty of Education and Society, 20 Bedford Way, London, WC1H 0AL, United Kingdom}
+
+\mobile{+447561716123}
+\email{f.petit@ucl.ac.uk}
+% \email{f.petit@ub.edu}
+\homepage{www.fabienpetit.com}
+\github{FabienPetitEconomics}
+%\linkedin{mylinkedin}
+% \gitlab{my-gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{FabienPetitUCL}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Fabien PETIT ~~~·~~~ Curriculum Vitae}
+  {\thepage}
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%   Comment out any sections that are not appropriate for your CV
+%-------------------------------------------------------------------------------
+% %---------------------------------------------------------
+\cvsection{Research Interests}
+% %---------------------------------------------------------
+\begin{cvhonors}
+    \cvhonor
+    {}{Labor Economics, Innovation Economics, Education Economics}{}{Fields} % Fields
+    \cvhonor
+    {}{Labor Markets, Technologies, Skills, Generations, Inequality}{}{Topics} % Research interests
+\end{cvhonors}
+
+% \input{sections/placement.tex}
+\input{sections/employment}
+% \input{sections/affiliation.tex}
+\input{sections/publications.tex}
+\input{sections/data.tex}
+\input{sections/education.tex}
+\input{sections/visit.tex}
+\input{sections/honors.tex}
+\input{sections/teaching.tex}
+\input{sections/presentation.tex}
+% \newpage
+\input{sections/service.tex}
+\input{sections/professional.tex}
+\input{sections/skills.tex}
+% \input{sections/references.tex}
+
+%% Not used
+% \input{sections/extracurricular.tex}
+% \input{sections/honors.tex}
+% \input{sections/mentoring.tex}
+% \input{sections/research.tex}
+
+%-------------------------------------------------------------------------------
+\end{document}

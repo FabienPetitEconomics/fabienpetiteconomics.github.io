@@ -17,7 +17,8 @@ Static personal website for Fabien Petit (Economist, UCL CEPEO), hosted from thi
 - [assets/webfonts](assets/webfonts): local icon fonts required by Font Awesome
 - [images](images): profile image and favicon assets
 - [wp](wp): linked PDF working papers and related documents
-- [PETIT_CV.pdf](PETIT_CV.pdf): CV download target
+- [cv](cv): LaTeX source of the CV (the source of truth)
+- [PETIT_CV.pdf](PETIT_CV.pdf): CV download target — generated from [cv](cv), do not edit by hand
 
 ## Editing Guide
 
@@ -25,6 +26,30 @@ Static personal website for Fabien Petit (Economist, UCL CEPEO), hosted from thi
 
 - Edit profile, updates, and publication content in [index.html](index.html).
 - Keep publication links in sync with files in [wp](wp) where local PDFs are used.
+
+### CV updates
+
+The CV is written in LaTeX in [cv](cv) and compiled to [PETIT_CV.pdf](PETIT_CV.pdf) at the
+repository root, which is the file the site links to. Overleaf is no longer involved.
+
+1. Edit the relevant section file in [cv/sections](cv/sections) (or [cv/cv.tex](cv/cv.tex) to
+   change personal details, the header, or which sections are included).
+2. Rebuild:
+
+```bash
+powershell -File cv/build.ps1
+```
+
+3. Commit the changed `.tex` files and the regenerated `PETIT_CV.pdf` together.
+
+Notes:
+
+- Requires MiKTeX with `latexmk` and `xelatex` on PATH. The build uses XeLaTeX because the CV
+  class loads fonts with `fontspec`.
+- Roboto and FontAwesome are bundled in [cv/fonts](cv/fonts); nothing needs to be installed
+  system-wide.
+- Aux files go to `cv/.build/` (gitignored). Add `-Clean` to wipe them before rebuilding.
+- The footer date is `\today`, so every rebuild updates it.
 
 ### Styling updates
 
